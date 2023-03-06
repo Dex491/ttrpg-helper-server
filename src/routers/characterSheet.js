@@ -14,7 +14,7 @@ router.get("/:id", (req, res) => {
 	if (!CS) {
 		return res
 			.status(404)
-			.json({ error: "A book the provided ID does not exist" });
+			.json({ error: "A character sheet with the provided ID does not exist" });
 	}
 	res.json({ data: CS });
 });
@@ -29,6 +29,23 @@ router.post("/", (req, res) => {
 	CSData.push(CS);
 	res.status(201).json({ data: CS });
 	return CSData;
+});
+
+router.put("/:id", (req, res) => {
+	const id = Number(req.params.id);
+	const CS = CSData.find((CS) => id === CS.id);
+	if (!CS) {
+		return res
+			.status(404)
+			.json({ error: "A character sheet with the provided ID does not exist" });
+	}
+	if (!req.body) {
+		res.status(400).json({ error: "Request body not found" });
+	}
+	Object.keys(req.body).forEach((prop) => {
+		CS[prop] = req.body[prop];
+	});
+	res.json({ CS });
 });
 
 module.exports = router;
