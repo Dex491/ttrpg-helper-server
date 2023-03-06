@@ -381,5 +381,5 @@ const initialCSData = {
 
 module.exports = {
 	CSData: CSData,
-	initialCSData: initalCSData,
+	initialCSData: initialCSData,
 };
