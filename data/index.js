@@ -1,6 +1,6 @@
 const CSData = [
 	{
-		id: 0,
+		id: 1,
 		headerStats: {
 			charName: "Wilric",
 			class: "Warlock L10",

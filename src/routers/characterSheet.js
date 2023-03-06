@@ -4,6 +4,10 @@ const { CSData, initialCSData } = require("../../data/index.js");
 
 const router = express.Router();
 
+router.get("/", (req, res) => {
+	res.json({ data: CSData });
+});
+
 router.get("/:id", (req, res) => {
 	const id = Number(req.params.id);
 	const CS = CSData.find((CS) => id === CS.id);
@@ -22,8 +26,9 @@ router.post("/", (req, res) => {
 	let id = CSData.length;
 	id++;
 	const CS = { ...req.body, id };
-	CSData.push(CS.data);
+	CSData.push(CS);
 	res.status(201).json({ data: CS });
+	return CSData;
 });
 
 module.exports = router;
