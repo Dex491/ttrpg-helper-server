@@ -15,4 +15,15 @@ router.get("/:id", (req, res) => {
 	res.json({ data: CS });
 });
 
+router.post("/", (req, res) => {
+	if (!req.body) {
+		res.status(400).json({ error: "Request body not found" });
+	}
+	let id = CSData.length;
+	id++;
+	const CS = { ...req.body, id };
+	CSData.push(CS.data);
+	res.status(201).json({ data: CS });
+});
+
 module.exports = router;
