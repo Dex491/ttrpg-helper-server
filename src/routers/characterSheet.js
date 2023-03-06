@@ -4,9 +4,15 @@ const { CSData, initialCSData } = require("../../data/index.js");
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
-	// TODO: Check id param for correct CSData, this is just testing atm
-	res.json({ CSData });
+router.get("/:id", (req, res) => {
+	const id = Number(req.params.id);
+	const CS = CSData.find((CS) => id === CS.id);
+	if (!CS) {
+		return res
+			.status(404)
+			.json({ error: "A book the provided ID does not exist" });
+	}
+	res.json({ data: CS });
 });
 
 module.exports = router;
