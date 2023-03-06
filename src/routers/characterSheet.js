@@ -45,7 +45,20 @@ router.put("/:id", (req, res) => {
 	Object.keys(req.body).forEach((prop) => {
 		CS[prop] = req.body[prop];
 	});
-	res.json({ CS });
+	res.json({ data: CS });
+});
+
+router.delete("/:id", (req, res) => {
+	const id = Number(req.params.id);
+	const CS = CSData.find((CS) => id === CS.id);
+	if (!CS) {
+		return res
+			.status(404)
+			.json({ error: "A character sheet with the provided ID does not exist" });
+	}
+
+	CSData.splice(CSData.indexOf(CS), 1);
+	res.json({ data: CS });
 });
 
 module.exports = router;
