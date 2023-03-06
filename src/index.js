@@ -10,6 +10,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // ROUTERS HERE
+const CSRouter = require("./routers/characterSheet");
+app.use("/characterSheet", CSRouter);
 
 // GET route on root for testing
 app.get("*", (req, res) => {
