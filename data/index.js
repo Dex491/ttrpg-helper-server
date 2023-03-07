@@ -11,12 +11,12 @@ const CSData = [
 			xp: "3000",
 		},
 		baseStats: {
-			str: 14,
-			dex: 12,
-			con: 18,
-			int: 10,
-			wis: 8,
-			cha: 20,
+			strength: 14,
+			dexterity: 12,
+			constitution: 18,
+			intelligence: 10,
+			wisdom: 8,
+			charisma: 20,
 		},
 		saves: {
 			str: {
