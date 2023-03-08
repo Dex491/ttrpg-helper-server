@@ -19,27 +19,27 @@ const CSData = [
 			charisma: 20,
 		},
 		saves: {
-			str: {
+			strength: {
 				mod: 2,
 				prof: false,
 			},
-			dex: {
+			dexterity: {
 				mod: 1,
 				prof: false,
 			},
-			con: {
+			constitution: {
 				mod: 3,
 				prof: false,
 			},
-			int: {
+			intelligence: {
 				mod: 0,
 				prof: false,
 			},
-			wis: {
+			wisdom: {
 				mod: 3,
 				prof: true,
 			},
-			cha: {
+			charisma: {
 				mod: 9,
 				prof: true,
 			},
