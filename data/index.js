@@ -28,7 +28,7 @@ const CSData = [
 				prof: false,
 			},
 			constitution: {
-				mod: 3,
+				mod: 4,
 				prof: false,
 			},
 			intelligence: {
@@ -46,7 +46,7 @@ const CSData = [
 		},
 		passPer: 13,
 		inspiration: false,
-		profBonus: 2,
+		profBonus: 4,
 		skills: {
 			acrobatics: {
 				mod: 1,
