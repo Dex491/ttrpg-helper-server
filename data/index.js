@@ -178,15 +178,18 @@ const CSData = [
 				gp: 17,
 				pp: 0,
 			},
-			otherEquipment: "",
+			otherEquipment:
+				"spellcasting focus (amulet), 50ft rope, torch, climbing gear",
 		},
 		rpTraits: {
-			personalityTraits: "",
-			ideals: "",
-			bonds: "",
-			flaws: "",
+			personalityTraits:
+				"personality trait 1, personality trait 2, personality trait 3",
+			ideals: "ideal 1, ideal 2, ideal 3",
+			bonds: "person 1, person 2, person 3",
+			flaws: "flaw 1, flaw 2, flaw 3",
 		},
-		featsAndTraits: "",
+		featsAndTraits:
+			"Pact Magic PHB - pg 107: You can cast known warlock spells using CHA as your spellcasting modifier (Spell DC 17, Spell Attack +9). You can use an arcane focus as a spellcasting focus.",
 	},
 ];
 
