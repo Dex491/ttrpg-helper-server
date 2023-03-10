@@ -168,7 +168,7 @@ const CSData = [
 					damage: "",
 				},
 			],
-			fullDescription: "",
+			fullDescription: "+1 Dagger, Hand crossbow (20 bolts), Spear",
 		},
 		equipment: {
 			currency: {
