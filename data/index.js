@@ -45,6 +45,8 @@ const CSData = [
 			},
 		},
 		passPer: 13,
+		otherProfs:
+			"Light Armour, Firearms, Simple Weapons, Thieves' Tools, Playing Card Set \nCommon, Elvish",
 		inspiration: false,
 		profBonus: 4,
 		skills: {
