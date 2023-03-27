@@ -160,7 +160,6 @@ const CSData = [
 					atk: null,
 					damage: "",
 				},
-				,
 				{
 					id: 2,
 					name: "",
