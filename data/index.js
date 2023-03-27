@@ -190,7 +190,7 @@ const CSData = [
 			flaws: "flaw 1, flaw 2, flaw 3",
 		},
 		featsAndTraits:
-			"Pact Magic PHB - pg 107: You can cast known warlock spells using CHA as your spellcasting modifier (Spell DC 17, Spell Attack +9). You can use an arcane focus as a spellcasting focus.",
+			"Pact Magic PHB - pg 107: \nYou can cast known warlock spells using CHA as your spellcasting modifier (Spell DC 17, Spell Attack +9). \nYou can use an arcane focus as a spellcasting focus.",
 	},
 ];
 
