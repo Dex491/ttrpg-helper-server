@@ -1,6 +1,5 @@
 const express = require("express");
-const { getUserData } = require("../controllers/user");
-const { CSData, initialCSData } = require("../../data/index.js");
+const { CSData } = require("../../data/index.js");
 
 const router = express.Router();
 
