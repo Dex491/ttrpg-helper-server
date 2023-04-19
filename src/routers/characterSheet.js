@@ -1,5 +1,5 @@
 const express = require("express");
-const { CSData } = require("../../data/index.js");
+const CSData = require("../../data/index.js");
 
 const router = express.Router();
 

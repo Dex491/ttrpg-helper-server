@@ -194,6 +194,4 @@ const CSData = [
 	},
 ];
 
-module.exports = {
-	CSData: CSData,
-};
+module.exports = CSData;
